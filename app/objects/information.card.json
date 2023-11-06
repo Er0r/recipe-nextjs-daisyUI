@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Easy To Use",
+        "url": "/assets/information/1.jpg",
+        "description": "Discover, create, and share delicious recipes with our new app!"
+    },
+    {
+        "id": 2,
+        "title": "Handy",
+        "url": "/assets/information/2.jpg",
+        "description": "Handy Recipe App: Your pocket-sized culinary companion for delectable dishes!"
+    },
+    {
+        "id": 2,
+        "title": "Use Anywhere",
+        "url": "/assets/information/3.jpg",
+        "description": "Use Anywhere: Your go-to recipe app for delicious meals, anytime, anywhere!"
+    }
+]
