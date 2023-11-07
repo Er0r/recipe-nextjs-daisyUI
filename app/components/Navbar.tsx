@@ -1,10 +1,10 @@
 import React from "react";
-
+import Link from "next/link";
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100">
         <div className="flex-1">
-            <a className="btn btn-ghost normal-case text-xl">foodRecipe</a>
+            <Link className="btn btn-ghost normal-case text-xl" href="/">foodRecipe</Link>
         </div>
         <div className="flex-none gap-2">
             <div className="form-control">

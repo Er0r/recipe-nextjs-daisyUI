@@ -2,6 +2,7 @@ import LandingPage from "../public/assets/landing_page.jpg";
 import Image from "next/image";
 import Card from "./components/Card";
 import InformationJSON from "./objects/information.card.json";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -28,14 +29,9 @@ export default function Home() {
         </div>
       </div>
       <div className="order-5 md:order-5">
-        <div className="flex justify-center">
-          <h1 className="text-3xl md:text-4xl font-bold text-yellow-300 mx-auto md:mx-auto py-2 md-py-1">
-            CHOICE-LIST
-          </h1>
-        </div>
         {/* cards */}
-        <div>
-          <div className="flex flex-wrap">
+        <div className=" flex flex-col items-center">
+          <div className="grid grid-cols-1 md:grid-cols-3">
             {InformationJSON.map((information) => ( 
               <Card
                 key={information.id}
@@ -46,6 +42,11 @@ export default function Home() {
             ))}
           </div>
         </div>
+      </div>
+      <div className="flex justify-center mt-4">
+        <Link href="/recipe">
+          <button className="btn btn-outline btn-accent p-2 m-2">Click For Recipe</button>
+        </Link>
       </div>
     </div>
   );

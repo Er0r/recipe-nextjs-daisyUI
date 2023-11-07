@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "Nasi Goreng Ayam",
+        "short_description": "Nasi goreng ayam is a popular Indonesian fried rice with chicken. It is delicious and easy to make.",
+        "process": ["In a medium bowl, season the chicken pieces with the salt and white pepper.", "In a large wok or skillet, heat 1 tablespoon oil over high heat until it melts or shimmers. Fry the chicken, stirring frequently, until cooked through, about 5 minutes. Remove and set aside.", "Add another 1 tablespoon oil to the pan, then add the shallot, galangal and garlic, and cook over medium-high until fragrant. Add the green beans, scallions and turmeric and cook for 1 minute.", "Add the cooked rice to the pan, breaking up any clumps with a wooden spoon and stirring until combined and warmed.", "Return the chicken to the pan. Stir in the kecap manis, light soy sauce, fish sauce, a large pinch of white pepper, and extra salt if needed.", "Meanwhile, fry the eggs: Place a large nonstick skillet over medium-high heat and add the remaining 1 tablespoon oil. Once shimmering, crack the eggs directly into the oil. Cook for 2 to 3 minutes until the whites are partially cooked. Tilt the pan and spoon the hot oil over the egg whites until they are fully cooked. Season with salt.", "Divide the fried rice between two serving plates and top with the fried shallots, sliced chile and fried eggs; serve with crackers."],
+        "url": "/assets/foods/1.jpg",
+        "tips": "To make your own kecap manis, in a medium saucepan, bring ¾ cup light soy sauce or gluten-free tamari with 1¼ packed cups palm sugar or light or dark brown sugar to a simmer over medium. Reduce heat to low and cook until mixture thickens to the texture of maple syrup, about 5 minutes. Let cool. Cover and refrigerate for up to a few weeks. Makes about ¾ cup.",
+        "tags": ["Nasi", "Goreng", "Ayam", "Nasi Foods", "Foods"]
+    },
+    {
+        "id": 2,
+        "name": "Nasi Goreng Ayam",
+        "short_description": "Nasi goreng ayam is a popular Indonesian fried rice with chicken. It is delicious and easy to make.",
+        "process": ["In a medium bowl, season the chicken pieces with the salt and white pepper.", "In a large wok or skillet, heat 1 tablespoon oil over high heat until it melts or shimmers. Fry the chicken, stirring frequently, until cooked through, about 5 minutes. Remove and set aside.", "Add another 1 tablespoon oil to the pan, then add the shallot, galangal and garlic, and cook over medium-high until fragrant. Add the green beans, scallions and turmeric and cook for 1 minute.", "Add the cooked rice to the pan, breaking up any clumps with a wooden spoon and stirring until combined and warmed.", "Return the chicken to the pan. Stir in the kecap manis, light soy sauce, fish sauce, a large pinch of white pepper, and extra salt if needed.", "Meanwhile, fry the eggs: Place a large nonstick skillet over medium-high heat and add the remaining 1 tablespoon oil. Once shimmering, crack the eggs directly into the oil. Cook for 2 to 3 minutes until the whites are partially cooked. Tilt the pan and spoon the hot oil over the egg whites until they are fully cooked. Season with salt.", "Divide the fried rice between two serving plates and top with the fried shallots, sliced chile and fried eggs; serve with crackers."],
+        "url": "/assets/foods/1.jpg",
+        "tips": "To make your own kecap manis, in a medium saucepan, bring ¾ cup light soy sauce or gluten-free tamari with 1¼ packed cups palm sugar or light or dark brown sugar to a simmer over medium. Reduce heat to low and cook until mixture thickens to the texture of maple syrup, about 5 minutes. Let cool. Cover and refrigerate for up to a few weeks. Makes about ¾ cup.",
+        "tags": ["Nasi", "Goreng", "Ayam", "Nasi Foods", "Foods"]
+    },
+    {
+        "id": 3,
+        "name": "Nasi Goreng Ayam",
+        "short_description": "Nasi goreng ayam is a popular Indonesian fried rice with chicken. It is delicious and easy to make.",
+        "process": ["In a medium bowl, season the chicken pieces with the salt and white pepper.", "In a large wok or skillet, heat 1 tablespoon oil over high heat until it melts or shimmers. Fry the chicken, stirring frequently, until cooked through, about 5 minutes. Remove and set aside.", "Add another 1 tablespoon oil to the pan, then add the shallot, galangal and garlic, and cook over medium-high until fragrant. Add the green beans, scallions and turmeric and cook for 1 minute.", "Add the cooked rice to the pan, breaking up any clumps with a wooden spoon and stirring until combined and warmed.", "Return the chicken to the pan. Stir in the kecap manis, light soy sauce, fish sauce, a large pinch of white pepper, and extra salt if needed.", "Meanwhile, fry the eggs: Place a large nonstick skillet over medium-high heat and add the remaining 1 tablespoon oil. Once shimmering, crack the eggs directly into the oil. Cook for 2 to 3 minutes until the whites are partially cooked. Tilt the pan and spoon the hot oil over the egg whites until they are fully cooked. Season with salt.", "Divide the fried rice between two serving plates and top with the fried shallots, sliced chile and fried eggs; serve with crackers."],
+        "url": "/assets/foods/1.jpg",
+        "tips": "To make your own kecap manis, in a medium saucepan, bring ¾ cup light soy sauce or gluten-free tamari with 1¼ packed cups palm sugar or light or dark brown sugar to a simmer over medium. Reduce heat to low and cook until mixture thickens to the texture of maple syrup, about 5 minutes. Let cool. Cover and refrigerate for up to a few weeks. Makes about ¾ cup.",
+        "tags": ["Nasi", "Goreng", "Ayam", "Nasi Foods", "Foods"]
+    }
+]

@@ -8,7 +8,7 @@ interface CardProps {
 
 const Card = ({ imageUrl, title, description }: CardProps) => {
   return (
-    <div className="w-full md:w-1/2 lg:w-1/3 p-2">
+    <div className="w-full p-2">
       <div className="card bg-base-100 shadow-xl">
         <figure className="h-48 md:h-64">
           <img
