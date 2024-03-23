@@ -14,6 +14,12 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
+    colors: {
+      headButton: "#f9e897",
+      deepHeadButton: '#ffc374',
+      subHeadButton: '#FBF3D5',
+      subDeepHeadButton: '#FFD8A8',
+    }
   },
   plugins: [require("daisyui")],
 }
