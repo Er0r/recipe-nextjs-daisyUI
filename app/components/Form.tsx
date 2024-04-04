@@ -7,11 +7,12 @@ const Form = () => {
     const [content, setContent] = useState('');
     const [featuredImage, setFeaturedImage] = useState<File | null>(null);
     const [category, setCategory] = useState('Blog');
+    const [toastMessage, setToastMessage] = useState<string | null>(null);
+    const [toastColor, setToastColor] = useState<string | null>(null);
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        // Create a FormData object to send the data to the API
         const formData = new FormData();
         formData.append('title', title);
         formData.append('content', content);
@@ -19,22 +20,36 @@ const Form = () => {
             formData.append('featuredImage', featuredImage);
         }
         formData.append('category', category);
+        formData.append('author', '6607984e6c4d2f3966923221');
+        formData.append('date', new Date().toISOString());
+        formData.append('slug', title.toLowerCase().replace(/\s/g, '-'));
+
         const formDataEntries = Array.from(formData.entries());
         console.log('Form Data:', formDataEntries);
-        // try {
-        //     // Replace 'YOUR_API_URL' with the actual API endpoint URL
-        //     const response = await axios.post('YOUR_API_URL', formData, {
-        //         headers: {
-        //             'Content-Type': 'multipart/form-data',
-        //         },
-        //     });
+        try {
+            const response = await axios.post('http://localhost:3001/api/v1/blog', formData, {
+                headers: { 'Content-Type': 'multipart/form-data' }
+            });
+            
+            if (!response) {
+                setToastMessage('Technical Problem. Please try again.');
+                setTimeout(() => setToastMessage(null), 3000);
+                setToastColor('red');
+            } else if (response.status !== 201) {
+                setToastMessage('Technical Problem. Please try again.');
+                setTimeout(() => setToastMessage(null), 3000);
+                setToastColor('red');
+            } else {
+                setToastMessage('Blog Published Successfully.');
+                setTimeout(() => setToastMessage(null), 3000);
+                setToastColor('green');
+            }
 
-        //     console.log(response.data); // Log the response from the API
-        //     // You can perform additional actions after successful submission
-        // } catch (error) {
-        //     console.error('Error submitting form:', error);
-        //     // Handle error scenarios
-        // }
+        } catch (error) {
+            setToastMessage('Error submitting Blog. Please try again.');
+            setTimeout(() => setToastMessage(null), 3000);
+            setToastColor('red');
+        }
     };
 
     return (
@@ -86,7 +101,12 @@ const Form = () => {
                         Submit
                     </button>
                 </div>
+                { toastMessage && (<div className="toast toast-end">
+                    { toastColor === 'red' ? ( <div className="alert alert-error"> { toastMessage } </div> ) : null }
+                    { toastColor === 'green' ? ( <div className="alert alert-success"> { toastMessage } </div> ) : null }
+                </div>) }
             </div>
+
         </form>
     );
 };

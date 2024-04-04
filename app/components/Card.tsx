@@ -1,7 +1,7 @@
 import React from "react";
 
 interface CardProps {
-  imageUrl: string;
+  imageUrl: string | undefined;
   title: string;
   description: string;
 }

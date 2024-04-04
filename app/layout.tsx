@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import { dbConnect } from '@/services/mongo'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,11 +12,13 @@ export const metadata: Metadata = {
   description: 'A food recipe app built with Next.js and DaisyUI.',
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  const conn = await dbConnect();
+  console.log(conn);
   return (
     <html lang="en">
       
