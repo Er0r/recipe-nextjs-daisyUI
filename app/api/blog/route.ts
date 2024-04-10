@@ -19,7 +19,7 @@ export async function POST(req: NextRequest) {
     let featuredImage = '';
 
     if (fileUpload) {
-      const uploadedFile = fileUpload as File;
+      const uploadedFile = await fileUpload as File;
       const fileName = `${Date.now()}-${uploadedFile.name}`;
       // const filePath = path.join(process.cwd(), 'tmp', fileName);
       // const data = await uploadedFile.arrayBuffer();
@@ -29,7 +29,7 @@ export async function POST(req: NextRequest) {
           access: 'public',
       });
       featuredImage = blob.url;
-  
+
     }
 
     const blog = new blogModel({
