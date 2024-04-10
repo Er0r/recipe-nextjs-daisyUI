@@ -1,13 +1,14 @@
-import { getAllBlogs } from '@/db/queries';
+import { getAllBlogs, getAllCategories } from '@/db/queries';
 import BlogCard from '../components/BlogCard';
 
 
 const Blog = async () => {
     const blogs = await getAllBlogs();
-    console.log(blogs); 
+    const categories = await getAllCategories();
+
     return (
         <div>
-            <BlogCard blogs = {blogs as any} />
+            <BlogCard blogs = {blogs as any}  categories = {categories as any} />
         </div>
     )
 }

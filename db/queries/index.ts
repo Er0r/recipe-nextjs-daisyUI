@@ -1,4 +1,5 @@
 import { blogModel } from "@/models/blog-model";
+import { categoryModel } from "@/models/category-model";
 
 type ObjectId = any;
 
@@ -19,4 +20,8 @@ async function getAllBlogs(): Promise<BlogPost> {
     return await blogModel.find().lean();
 }
 
-export { getAllBlogs };
+async function getAllCategories(): Promise<string[]> {
+    return await categoryModel.find().lean();
+}
+
+export { getAllBlogs, getAllCategories };
