@@ -20,10 +20,10 @@ export async function POST(req: NextRequest) {
     if (fileUpload) {
       const uploadedFile = fileUpload as File;
       const fileName = `${Date.now()}-${uploadedFile.name}`;
-      const filePath = path.join(process.cwd(), 'public', 'uploads', fileName);
+      const filePath = path.join(process.cwd(), 'public', 'tmp', fileName);
       const data = await uploadedFile.arrayBuffer();
       await fs.writeFile(filePath, Buffer.from(data));
-      featuredImage = `/uploads/${fileName}`;
+      featuredImage = `/tmp/${fileName}`;
     }
 
     const blog = new blogModel({
