@@ -47,6 +47,9 @@ export default function Home() {
         <Link href="/recipe">
           <button className="btn btn-outline btn-accent p-2 m-2">Click For Recipe</button>
         </Link>
+        <Link href="/blog">
+          <button className="btn btn-outline btn-accent p-2 m-2">Show Blogs</button>
+        </Link>
       </div>
     </div>
   );
