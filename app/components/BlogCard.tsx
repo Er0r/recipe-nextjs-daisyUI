@@ -1,4 +1,4 @@
-import { headers } from "next/headers";
+
 import Card from "./Card";
 
 type CardType = {
@@ -20,8 +20,6 @@ type BlogPost = {
 }
 
 const BlogCard = (blogs: any, categories: any) => {
-    const headerList = headers();
-     const domain = headerList.get("x-forwarded-host") || headerList.get("host") || "localhost:3000";
     return (
         <>
             <div>
