@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v3  # Checks out your repository code
 
       - name: Install  App
-        run: npm run install
+        run: npm install --legacy-peer-deps
       # Build the Next.js app
       - name: Build Next.js App
         run: npm run build  # Replace with your build command if necessary
