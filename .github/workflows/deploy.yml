@@ -11,10 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3  # Checks out your repository code
 
-      - name: Install Nodejs Next.js App
-        uses: actions/setup-node@v3
-        with:
-            node-version: '18'
+      - name: Install  App
+        run: npm run install
       # Build the Next.js app
       - name: Build Next.js App
         run: npm run build  # Replace with your build command if necessary
